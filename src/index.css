@@ -1,0 +1,93 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1f36;
+  background: #fff;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6 { font-family: 'Syne', sans-serif; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes floatOrb {
+  0%,100% { transform: translateY(0) scale(1); }
+  50%     { transform: translateY(-22px) scale(1.04); }
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.35; }
+}
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+#home {
+  position: relative;
+  height: 100vh;   /* 🔥 use height instead of min-height */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* VIDEO BACKGROUND */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%vh;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* lighter, natural */
+  z-index: 2;
+}
+
+/* CONTENT ON TOP */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 120px 1%;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.hero-content {
+  margin-left: 0 !important;
+  padding-left: 2% !important;
+}
+
+.service-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
