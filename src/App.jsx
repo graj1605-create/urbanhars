@@ -265,12 +265,12 @@ function Navbar() {
   
   {/* Phone Number */}
   <span style={{ fontWeight:600 }}>
-    📞 9876543210
+    📞 08069645496
   </span>
 
   {/* Book Now Button */}
   <a
-    href="tel:9876543210"
+    href="tel:08069645496"
     style={{
       background:'#ff7a00',
       color:'white',
@@ -855,7 +855,7 @@ const submit = async (e) => {
             We service all areas across Bangalore — Koramangala, Indiranagar, Whitefield, HSR Layout, JP Nagar, Hebbal, Yelahanka, Electronic City &amp; more.
           </p>
           {[
-            { icon:'📞', label:'Phone / WhatsApp', val:'+91 9108911705' },
+            { icon:'📞', label:'Phone / WhatsApp', val:'+91 08069645496' },
             { icon:'✉️', label:'Email',             val:'support@urbanhars.com' },
             { icon:'🌐', label:'Website',           val:'www.urbanhars.com' },
             { icon:'📍', label:'Service Area',      val:'All areas across Bangalore' },
